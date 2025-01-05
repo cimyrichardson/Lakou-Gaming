@@ -12,12 +12,13 @@ Connect Haitian gamers to the rest of the world.
 Provide a space where the community can grow and share their passion for gaming.
 Strengthen local innovation in the world of technology and gaming.
 
-🎮 Main features
-
-Gaming tournaments: create local and international competitions.
-Community: real-time chat, strategic discussions and gatherings.
-Player resources: tactics, guides to popular games and training to improve your level.
-The new platform is coming: an interactive app for easier, more interactive gaming.
+🎮 Karakteristik kle
 
 
-Let's make Lakou Gaming stronger together!
+Tounwa Gaming : Kreye konpetisyon local ak entènasyonal.
+Kominote : Chat an tan reyèl, diskisyon sou estrateji, e rasanbleman.
+Resous pou gèmer : Taktik, gid sou jwèt popilè, ak antrenman pou devlope nivo ou.
+Nouvel platfòm a veni : Yon aplikasyon interactive pou gaming pi fasil epi pi entèaktif.
+
+
+Ann fè Lakou Gaming vin pi fò ansanm!
