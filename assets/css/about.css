@@ -1,0 +1,104 @@
+:root {
+    /* Colors */
+    --bg-dark-purple: hsla(279, 42%, 9%, 1);
+    --text-white: hsla(0, 0%, 100%, 1);
+    --text-purple: hsla(267, 100%, 63%, 1);
+    --text-gainsboro: hsla(0, 0%, 87%, 1);
+  
+    /* Typography */
+    --fontFamily-oxanium: 'Oxanium', cursive;
+    --fontFamily-work-sans: 'Work Sans', sans-serif;
+  
+    --fontSize-2: 2.4rem;
+    --fontSize-3: 2rem;
+    --fontSize-5: 1.6rem;
+  
+    /* Spacing */
+    --section-spacing: 60px;
+  
+    /* Shadow */
+    --shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.2);
+  
+    /* Clip path */
+    --clip-path-7: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
+}
+
+.about-us-section {
+    color: var(--text-white);
+    padding: var(--section-spacing);
+    clip-path: var(--clip-path-7);
+    box-shadow: var(--shadow);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .about-title {
+    font-family: var(--fontFamily-oxanium);
+    font-size: var(--fontSize-2);
+    font-weight: 700;
+    margin-bottom: 40px;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .sub-title {
+    font-family: var(--fontFamily-oxanium);
+    font-size: var(--fontSize-3);
+    font-weight: 600;
+    color: var(--text-purple);
+    margin-bottom: 20px;
+  }
+  
+  .about-vision,
+  .about-who,
+  .about-offer,
+  .about-why {
+    font-family: var(--fontFamily-work-sans);
+    font-size: var(--fontSize-5);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .highlight {
+    color: var(--text-purple);
+    font-weight: 600;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 40px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-us-section .container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+    .sub-title {
+      font-size: 1.8rem;
+    }
+    .about-vision,
+    .about-who,
+    .about-offer,
+    .about-why {
+      font-size: 1.4rem;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  }
+  
