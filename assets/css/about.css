@@ -74,11 +74,7 @@
     list-style-type: disc;
     margin-left: 40px;
   }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
+
   .about-us-section .container p:last-child {
     margin-bottom: 0;
   }
@@ -86,7 +82,7 @@
   /* Responsive design */
   @media (max-width: 768px) {
     .about-title {
-      margin-top: 3rem;
+      margin-top: 5rem;
       font-size: 2rem;
     }
     .sub-title {
