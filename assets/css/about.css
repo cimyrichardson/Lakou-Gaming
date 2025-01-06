@@ -86,6 +86,7 @@
   /* Responsive design */
   @media (max-width: 768px) {
     .about-title {
+      margin-top: 3rem;
       font-size: 2rem;
     }
     .sub-title {
