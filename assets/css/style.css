@@ -1,21 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
   /**
    * COLORS
    */
@@ -110,10 +93,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -183,10 +162,6 @@ body {
 ::-webkit-scrollbar-track { background-color: var(--bg-dark-purple); }
 
 ::-webkit-scrollbar-thumb { background-color: var(--bg-purple); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -320,10 +295,6 @@ body {
   transform: translate(0);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -404,10 +375,6 @@ body {
 
 .navbar-item:last-child { border-block-end: 1px solid var(--border-space-cadet); }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -439,9 +406,69 @@ body {
 
 .hero-banner-bg { display: none; }
 
+/*-----------------------------------*\
+  #About
+\*-----------------------------------*/
 
+.about-us-section {
+  background: var(--bg-dark-purple);
+  color: var(--text-white);
+  padding: var(--section-spacing);
+  box-shadow: var(--shadow);
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: left;
+}
 
+.about-title {
+  font-family: var(--fontFamily-oxanium);
+  font-size: var(--fontSize-1);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-subtitle {
+  font-family: var(--fontFamily-oxanium);
+  font-size: var(--fontSize-3);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section p {
+  font-family: var(--fontFamily-work-sans);
+  font-size: var(--fontSize-5);
+  line-height: 1.8;
+}
+
+.about-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  font-family: var(--fontFamily-work-sans);
+  font-size: var(--fontSize-6);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about-list strong {
+  color: var(--text-purple);
+}
+
+.highlight {
+  color: var(--text-purple);
+  font-weight: bold;
+}
 
 /*-----------------------------------*\
   #UPCOMING
@@ -788,7 +815,6 @@ body {
    */
 
   .header .logo img { width: 160px; }
-
 
 
   /**
