@@ -1,4 +1,3 @@
-// translations.js
 const translations = {
     en: {
         about: "About Us",
@@ -9,7 +8,5 @@ const translations = {
         contact: "Contact",
     },
     cr: {
-        about: "Sobre nosotros",
-        contact: "Contacto",
     }
 };
