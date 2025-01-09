@@ -42,7 +42,9 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
 
-  <!-- font awesome cdn link  -->
+  <!-- 
+    - font awesome cdn link  
+  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://kit.fontawesome.com/0839e1a059.js" crossorigin="anonymous"></script>
 
@@ -89,10 +91,9 @@
               <summary> 
                   <span><i class="fa-solid fa-globe"></i>  Language</span>
               </summary>
-              <ul>
-                  <li>French</li>
-                  <li>Creole</li>
-              </ul>
+                <button onclick="setLanguage('en')">English</button>
+                <button onclick="setLanguage('fr')">Français</button>
+                <button onclick="setLanguage('es')">Español</button>
             </details>
           </li>
 
@@ -596,6 +597,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="assets/js/translations.js" defer></script>
 
   <!-- 
     - ionicon link

@@ -119,3 +119,40 @@ addEventOnElements(hoverElements, "mouseover", function () {
 addEventOnElements(hoverElements, "mouseout", function () {
   cursor.classList.remove("hovered");
 });
+
+
+/**
+ * Language switcher
+*/
+
+function setLanguage(language) {
+  // Check if the language exists in the translations
+  if (!translations[language]) {
+    console.error(`La langue "${language}" n'est pas disponible.`);
+    return;
+  }
+
+  // Browse elements with the data-translate attribute
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    const translation = translations[language][key];
+
+    if (translation) {
+      element.textContent = translation;
+    } else {
+      console.warn(`Pas de traduction trouvée pour la clé "${key}"`);
+    }
+  });
+
+  // Update `lang` attribute in HTML tag
+  document.documentElement.lang = language;
+
+  // Save language in Local Storage
+  localStorage.setItem('language', language);
+}
+
+// Load saved language or set default language
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLanguage = localStorage.getItem('language') || 'en';
+  setLanguage(savedLanguage);
+});

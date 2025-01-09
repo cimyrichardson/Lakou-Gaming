@@ -381,6 +381,10 @@ header details summary{
   list-style: none;
 }
 
+.sum button{
+  color: var(--text-white);
+}
+
 .navbar-item { border-block-start: 1px solid var(--border-space-cadet); }
 
 .navbar-item:last-child { border-block-end: 1px solid var(--border-space-cadet); }
