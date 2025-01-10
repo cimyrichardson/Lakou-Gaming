@@ -11,7 +11,8 @@ const translations = {
         lambda: "Nouvelles",
         oméga: "À propos de nous",
         delta: "delta",
-        langue: "Langues"
+        langue: "Langues",
+        team: "Équipes",
     },
     cr: {
     }
