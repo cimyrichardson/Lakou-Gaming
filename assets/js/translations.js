@@ -10,7 +10,7 @@ const translations = {
         beta: "Tournoi",
         lambda: "Nouvelles",
         oméga: "À propos de nous",
-        delta: "delta",
+        delta: "contact",
         langue: "Langues",
         team: "Équipes",
     },
