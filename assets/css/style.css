@@ -514,10 +514,6 @@ header details summary{
 
 .upcoming-item .social-link:is(:hover, :focus-visible) { color: var(--text-purple); }
 
-
-
-
-
 /*-----------------------------------*\
   #NEWS
 \*-----------------------------------*/
@@ -605,6 +601,79 @@ header details summary{
 
 .news-card .link:is(:hover, :focus-visible) { color: var(--text-purple); }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-oxford-blue-alpha-90);
+  z-index: 1000;
+}
+
+.modal[aria-hidden="false"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  background: var(--bg-oxford-blue-alpha-95); /* Couleur sombre et élégante */
+  border-radius: 8px;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: var(--fontSize-3);
+  cursor: pointer;
+  color: var(--text-white);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: var(--fontSize-2);
+  font-family: var(--fontFamily-oxanium);
+  color: var(--text-white);
+}
+
+.modal-content ul {
+  padding: 0;
+  list-style: none;
+}
+
+.modal-content ul li {
+  margin: 8px 0;
+  font-size: var(--fontSize-6);
+  font-family: var(--fontFamily-work-sans);
+  color: var(--text-gainsboro);
+}
+
+.modal-content .btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: var(--bg-purple);
+  color: var(--text-white);
+  text-decoration: none;
+  border-radius: var(--radius-3);
+  font-size: var(--fontSize-6);
+  font-family: var(--fontFamily-work-sans);
+  font-weight: var(--weight-semiBold);
+  transition: var(--transition-1);
+}
+
+.modal-content .btn:hover {
+  background: var(--bg-purple-alpha-30);
+}
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -690,10 +759,6 @@ header details summary{
 }
 
 .copyright { padding: 30px 20px; }
-
-
-
-
 
 /*-----------------------------------*\
   #BACK TO TOP
@@ -783,10 +848,6 @@ header details summary{
   .footer-top .container { grid-template-columns: 1fr 1fr; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
@@ -899,10 +960,6 @@ header details summary{
   }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 992px screen

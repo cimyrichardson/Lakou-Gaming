@@ -156,3 +156,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLanguage = localStorage.getItem('language') || 'en';
   setLanguage(savedLanguage);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('modal');
+  const openModalLinks = document.querySelectorAll('[data-modal-target]');
+  const closeModalBtn = document.querySelector('[data-modal-close]');
+
+  // Open Modal
+  openModalLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  // Close Modal
+  closeModalBtn.addEventListener('click', () => {
+    modal.setAttribute('aria-hidden', 'true');
+  });
+
+  // Close Modal on outside click
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.setAttribute('aria-hidden', 'true');
+    }
+  });
+});
