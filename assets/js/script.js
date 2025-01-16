@@ -182,3 +182,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+/**
+ * Data Form to Google Sheet
+ */
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwpClLdMqW40r0aWlwIalbSCVaZEttb6Wkjp2d7NHcRCL2bJOBlS4JenbCYyda_YMEp/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thanks for joining our community" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})

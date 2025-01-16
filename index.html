@@ -518,7 +518,7 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Contact Us</a>
+              <a href="#form1" class="footer-link">Contact Us</a>
             </li>
 
           </ul>
@@ -553,16 +553,17 @@
 
         <div class="footer-list">
 
-          <p class="title footer-list-title has-after">Newsletter Signup</p>
+          <p class="title footer-list-title has-after">Join our community</p>
 
-          <form name="submit-to-google-sheet" class="footer-form">
-            <input type="email" name="Email" required placeholder="Your Email" autocomplete="off"
-              class="input-field">
+          <form id="form1" class="footer-form" method="post" action="" name="contact-form">
+            <input type="text" name="Name" required placeholder="Your Full Name" autocomplete="off"
+            class="input-field" required>
+
+            <input type="text" name="Phone" required placeholder="Your Phone Number" autocomplete="off"
+            class="input-field" required>
 
             <button type="submit" class="btn" data-btn>Subscribe Now</button>
           </form>
-          <span id="msg"></span>
-
         </div>
 
       </div>
@@ -605,24 +606,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <!-- 
-    - custom js Form
-  -->
-  <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwkDtk2GluE-KRM5CgZafZelzVfihbefkrNBd8Uoietkv1K_VYT3lr1zhxClhvkurm_uQ/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById(msg)
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Thank you for Subscribing"
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 
 <!-- Modal -->
 <div id="modal" class="modal" aria-hidden="true">
